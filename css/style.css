@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+    color: black;
+
+}
+
+/* MI CSS ESTA SIN TERMINAR. REALMENTE ME COSTO MUCHO MAS DE LO QUE PENSABA Y NO TUVE TIEMPO DE HACERLO PERFECTO */
+
+
+/* HEADER */
+
+
+header {
+
+    opacity: 0.6;
+    font-family: monospace;
+    padding: 14px;
+    padding-left: 45px;
+    padding-right: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2cm;
+    position: sticky;
+    top: 0px;
+    background-color: #e5ffb3;
+}
+
+header h1{
+    font-size: large;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.8cm;
+    ;
+}
+
+/* GALERIA INDEX*/
+main {
+    background-image: url("../imagenes/fondogreen.jpeg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: monospace;
+}
+
+.titulo1 {
+    padding-bottom: 15px;
+}
+
+
+.divIndex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+footer{
+    font-family: monospace;
+    background-color: #e5ffb3;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0cm;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+.imagenesindex {
+    width: 45vw;
+    height: 45vw;
+    
+}
+
+
+.containerdivs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+/*services*/
+
+.sectionservices{
+    padding: 0.5cm;
+
+}
+main section p {
+    padding-top: 0.5cm;
+}
+
+
+
+/* FOOTER */
+
+
+.logos {
+    width: 1cm;
+    height: 1cm;
+}
+
+/* RESPONSIVE INDEX Y SERVICES*/
+
+
+/*INDEX*/
+/*TUVE QUE PONER UN PADDING RIGHT PARA QUE QUEDE CENTRADO.NO ENTIENDO PQ CUANDO PONGO CENTER SE ME PONE MAS HACIA LA IZQUIERDA*/
+
+@media (min-width: 750px) {
+.containerdivs{
+    padding-top: 2cm;
+    display: grid;
+    grid-template-columns:40% 40% ;
+    grid-template-rows: 40% 40%;
+    gap: 4cm;
+    justify-content: center;
+    padding-right: 3cm;
+}
+    header {
+
+        opacity: 0.6;
+        font-family: monospace;
+        padding: 14px;
+        padding-left: 65px;
+        padding-right: 65px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.8cm;
+        position: sticky;
+        top: 0px;
+        background-color: #e5ffb3;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1cm;
+        ;
+    }
+    footer{
+        font-family: monospace;
+        background-color: #e5ffb3;
+        opacity: 0.9;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1cm;
+        padding: 10px;
+        width: 100%;
+        bottom: 0;
+    }
+    h1 {
+        font-size: larger;
+    }
+    h2{
+        font-size: large;
+    }
+
+
+
+}
+
